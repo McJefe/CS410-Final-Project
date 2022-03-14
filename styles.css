@@ -1,8 +1,14 @@
-.navbar-brand {
-    /* text-transform:uppercase; */
-    /* color-adjust: black; */
+
+img.herobanner {
+    border-radius: 0;
+    width: 100%;
 }
 
+.herobannerContainer {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
 img {
     border-radius: 5%;
 }

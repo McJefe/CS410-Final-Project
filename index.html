@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
     <!-- Adds an .ico image for tab thumbnail -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    
     <title>Velkommen! - Welcome!</title>
 </head>
 <body>
@@ -63,12 +63,9 @@
         </div>
     </nav>
     <!-- Simple header section to include an image -->
-    <section id="intro" class="pt-3">
-        <div class="container">
-            <div class="col-md>">
-                <img src="./MtAdams.JPEG" class="img-fluid" alt="Mount Adams, Washington with clouds scattering the sky">
-            </div>
-
+    <section id="intro">
+        <div class="container herobannerContainer">
+                <img src="./MtAdams.JPEG" class="herobanner" alt="Mount Adams, Washington with clouds scattering the sky">
         </div>
     </section>
 
@@ -115,7 +112,7 @@
             <h3>
             Skills
             </h3>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion accordion-flush">
                 <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -156,15 +153,15 @@
                             <h3 class="card-title mb-3">
                                 Java Raw Parsing App
                             </h3>
-                            <p class="card-text">
-                                Red-Black Tree
+                            <p class="card-text text-light">
+                                Utilizes Red-Black Tree
                             </p>
                             <a href="https://github.com/McJefe/ParsingApp/tree/main/CS202_prog4" class="btn btn-light">Code</a>
                         </div>
                     </div>
                 </div>
                 <div id="project2" class="col-md">
-                    <div class="card bg-info text-light">
+                    <div class="card bg-info text-dark">
                         <div class="card-body text-center">
                             <div class="h1 mb-3">
                                 <i class="bi bi-person-square"></i>
@@ -172,8 +169,8 @@
                             <h3 class="card-title mb-3">
                                 MERN Stack Chat App
                             </h3>
-                            <p class="card-text">
-                                Real Time Chat
+                            <p class="card-text text-dark">
+                                <b>Socket.io web chat application</b>
                             </p>
                             <a href="https://github.com/McJefe/MERNStackApp" class="btn btn-light">Code</a>
                         </div>
@@ -190,7 +187,7 @@
                                 C++ Dynamic Bind App
                             </h3>
                             <p class="card-text">
-                                Table of DLLs
+                                Array of Doubly Linked Lists
                             </p>
                             <a href="https://github.com/McJefe/DynamicBindingApp/tree/main/CS202_p2" class="btn btn-light">Code</a>
                         </div>
@@ -203,24 +200,24 @@
     </section>
 
     <!-- Contact section -->
-    <section id="contact" class="p-5 bg-secondary text-light">
+    <section id="contact" class="p-5 bg-dark text-light">
         <div class="container">
             <h1><b>Get in Touch</b></h1>
-        <form>
+        <form id="contact-form">
             <div class="mb-3">
                 <label for="inputName" class="form-label">Name</label>
-                <input type="name" class="form-control" placeholder="John Doe">
+                <input type="text" id="inputName" name="inputName" class="form-control" placeholder="John Doe">
             </div>
             <div class="mb-3">
                 <label for="inputEmail" class="form-label">Email address</label>
-                <input type="email" class="form-control" placeholder="name@example.com">
+                <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="name@example.com">
             </div>
             <div class="mb-3">
                 <label for="inputMessage" class="form-label">Message</label>
-                <textarea class="form-control"
+                <textarea class="form-control" name="inputMessage" id="inputMessage"
                 placeholder="Your message..." rows="3"></textarea>
             </div>
-            <button class="btn btn-primary btn-lg" type="submit">
+            <button class="btn btn-primary btn-lg" id="submit" type="button">
                 Submit
             </button>
             <button type="reset" class="btn btn-primary btn-lg">
@@ -239,6 +236,8 @@
             <a href="https://github.com/McJefe/CS410-Final-Project">McJefe</a>
         </div>
     </footer>
+
+    <script src="index.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
