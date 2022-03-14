@@ -11,6 +11,5 @@ window.open('mailto:' + email.value +'?body=' + message.value + '&subject=Get in
 name.value='';
 email.value='';
 message.value='';
-
 });
 
